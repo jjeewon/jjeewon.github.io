@@ -12,11 +12,11 @@ image: assets/images/file_upload.jpeg
 
 웹 클라이언트가 요청을 보낼 때, http 프로토콜의 바디에 데이터를 ‘여러 부분’으로 나눠서 보내는 것이다. 서버에 파일을 업로드할 때, http 프로토콜의 바디에 파일 정보를 담아서 전송하는데, 파일을 한번에 여러개 전송하면 body 부분에 파일이 여러개의 부분으로 연결되어 전송한다.<sup>[1](#footnote_1)</sup>
 
-#### 안드로이드에서 안드로이드 업로드 로직 구현해보기<sup>[2](#footnote_2)</sup>
+#### 안드로이드에서 업로드 로직 구현해보기<sup>[2](#footnote_2)</sup>
 
 (1) 매니페스트 파일에서 저장소 퍼미션 주기<sup>[3](#footnote_3)</sup> 
 
-![image info](./file_permission.png)
+![image info](/assets/images/file_permission.png)
 
 ```
 public static final String WRITE_EXTERNAL_STORAGE
