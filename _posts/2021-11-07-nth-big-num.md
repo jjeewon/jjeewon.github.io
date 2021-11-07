@@ -13,9 +13,9 @@ tags: [featured]
  
 
   
-![image info](/assets/images/tree_1.png)  
-![image info](/assets/images/tree_2.png)  
-![image info](/assets/images/tree_3.png)  
+![image info](/assets/images/n_1.png)  
+![image info](/assets/images/n_2.png)    
+
 
 ## 🤔 n번째로 큰 수를 구하려면?  
 n개만 가지는 최소 힙(min heap)을 이용하여, 힙이 n개의 큰 숫자들로만 구성되도록 표의 숫자들을 하나씩 비교하여 넣거나 넣지 않는다. 그리고 최종적으로 힙에서 원소 하나를 pop하면 된다.
