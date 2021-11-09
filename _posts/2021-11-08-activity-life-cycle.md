@@ -5,7 +5,9 @@ author: jiwon
 categories: [ Android ]
 image: assets/images/activity_lifecycle.jpg
 ---
-
+📑  
+# 개념 1️⃣ Activity Lifecycle
+  
 Activity Lifecycle이란 무엇일까? 액티비티가 생성(created), 소멸(destroyed)되고 시스템이 자원을 회수하는 전체 lifetime 동안 일어날 수 있는 액티비티 state의 집합이다.<sup>[1](#footnote_1)</sup>  사용자가 기기에서 여러 앱을 사용할 때, 액티비티는 원래 state와는 다른 state로 이동하게 된다. Activity Lifecycle은 7개의 콜백 메소드로 구성되며, 그 내용은 다음과 같다.<sup>[2](#footnote_2)</sup> 
 
 <p align="center"><img src="/assets/images/al_1.png"></p>
