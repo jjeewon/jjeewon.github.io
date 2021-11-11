@@ -6,8 +6,9 @@ categories: [ Android ]
 image: assets/images/fragment_lifecycle.jpg
 ---
 🤖  
-# 개념 2️⃣ Fragment Lifecycle<sup>[1](#footnote_1)</sup>  
-저번 포스트였던 액티비티 생명주기에 이어서, 이번에는 프래그먼트의 생명주기에 대해 알아보자! 프래그먼트의 생명주기는 크게 10개의 파트로 나누어 볼 수 있다.
+# 개념 2️⃣ Fragment Lifecycle  
+
+저번 포스트였던 액티비티 생명주기에 이어서, 이번에는 프래그먼트의 생명주기에 대해 알아보자! 프래그먼트의 생명주기는 크게 10개의 파트로 나누어 볼 수 있다.<sup>[1](#footnote_1)</sup>  
  
 
 
