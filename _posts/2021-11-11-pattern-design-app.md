@@ -48,10 +48,10 @@ image: assets/images/adp.jpg
 * 거의 모든 코드가 Activity, Fragment와 같은 ```Controller```에 작성되어 코드를 파악하기 쉬움
 
 ### MVC 패턴의 단점
-* Activity, Fragment가 ```View``` + Controller의 역할을 동시에 하는 구조임
+* Activity, Fragment가 ```View``` + ```Controller```의 역할을 동시에 하는 구조임
 * 코드량이 점진적으로 증가할 수 밖에 없음
 * 많은 코드가 하나의 클래스에 작성되면 스파게티 코드가 되어 유지보수비 증가함
-* Contoller는 ```View```와 ```Model```에 의존적이고, ```View```는 ```Model```에 의존적이므로 결합도가 높아서 유닛테스트가 거의 불가능함
+* ```Controller```는 ```View```와 ```Model```에 의존적이고, ```View```는 ```Model```에 의존적이므로 결합도가 높아서 유닛테스트가 거의 불가능함
 
 ## [2] MVP 디자인 패턴
 * UI와 Business Logic이 Activity, Fragment에 공존하는 MVC 패턴과는 다름
