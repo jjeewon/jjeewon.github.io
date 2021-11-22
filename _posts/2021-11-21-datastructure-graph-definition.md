@@ -6,7 +6,8 @@ categories: [ Data Structure ]
 image: assets/images/graph_title.png
 ---
 📚  
-# 개념 5️⃣ Graph
+# 개념 5️⃣ Graph  
+
 그래프(graph)는 노드(node)와 간선(노드를 연결, edge)을 하나로 모아놓은 자료구조이다. 그래프의 노드 간에는 2개 이상의 경로가 존재할 수 있으며, (루트 노드/부모 노드/자식 노드)라는 개념이 없다. 순회는 BFS 또는 DFS로 이루어지며, 순환/비순환 그래프로 나누거나 방향/무방향 그래프로 나눌 수 있다. 
 
 ## 그래프를 구현하는 두 가지 방법 
