@@ -6,7 +6,8 @@ categories: [ Data Structure ]
 image: assets/images/binary_heap_title.png
 ---
 📚  
-# 개념 4️⃣ Binary Heap
+# 개념 4️⃣ Binary Heap  
+
 힙(heap)은 트리 기반 자료구조로 힙 속성을 만족하는 트리이다. 최대 힙(Max Heap)의 속성은 부모 노드가 자식 노드보다 값이 크다는 것이고, 최소 힙(Min Heap)의 속성은 부모 노드가 자식 노드보다 값이 작다는 것이다. 이러한 힙의 특성으로 힙은 우선순위 큐를 구현하기에 적합한 자료구조이다. 다만, 힙에서는 부모와 자식 노드 간에 크고 작음만 정의되어 있을 뿐, 형제 또는 사촌 노드간의 우선순위는 정의되어 있지 않다. 
 
 ## 이진 힙(Binary Heap)이란?
