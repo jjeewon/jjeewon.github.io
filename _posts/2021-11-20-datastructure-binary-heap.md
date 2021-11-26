@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Binary Heap이란?"
-author: jiwon
+author: ella
 categories: [ Data Structure ]
 image: assets/images/binary_heap_title.png
 ---

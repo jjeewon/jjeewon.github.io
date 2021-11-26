@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "코틀린의 Class와 Property"
-author: jiwon
+author: ella
 categories: [ Kotlin ]
 image: assets/images/kotlin_class_property.jpg
 ---

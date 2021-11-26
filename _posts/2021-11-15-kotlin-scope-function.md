@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "코틀린의 Scope Functions"
-author: jiwon
+author: ella
 categories: [ Kotlin ]
 image: assets/images/kotlin_scope_functions.jpg
 ---

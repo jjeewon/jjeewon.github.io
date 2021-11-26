@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "트리의 지름"
-author: jiwon
+author: ella
 categories: [ Algorithm ]
 image: assets/images/diameter_of_tree.jpg
 tags: [featured]

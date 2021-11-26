@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Graph에 대해 이해하기"
-author: jiwon
+author: ella
 categories: [ Data Structure ]
 image: assets/images/graph_title.png
 ---

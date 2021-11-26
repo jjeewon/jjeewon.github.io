@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "스와이프 뷰 만들어보기(TabLayout과 Viewpager2)"
-author: jiwon
+author: ella
 categories: [ Android, Sellers ]
 image: assets/images/swipeview_title.jpg
 ---

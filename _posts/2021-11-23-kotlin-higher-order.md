@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "코틀린의 고차함수"
-author: jiwon
+author: ella
 categories: [ Kotlin ]
 image: assets/images/higher_title.png
 ---

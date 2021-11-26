@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "안드로이드 Design Pattern 이해하기"
-author: ella
+title:  "GET vs POST"
+author: jiwon
 categories: [ Android ]
 image: assets/images/adp.jpg
 ---

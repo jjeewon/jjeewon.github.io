@@ -19,8 +19,8 @@ plugins:
   - jekyll-seo-tag
   
 authors:
-    jiwon:
-      name:           Jiwon
+    ella:
+      name:           Ella
       site:           https://github.com/jjeewon
       avatar:         ./assets/images/jjeewon.jpg
       bio:            "Android Developer, love to explore new ideas and write on my morning coffee!"
@@ -35,7 +35,7 @@ defaults:
       path: "_posts"
     values:
       layout: post
-      author: jiwon
+      author: ella
       avatar: /assets/images/jjeewon.jpg
       
   # all pages

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "코틀린의 companion object & Singleton"
-author: jiwon
+author: ella
 categories: [ Kotlin ]
 image: assets/images/kotlin_companionobject_object.jpg
 ---

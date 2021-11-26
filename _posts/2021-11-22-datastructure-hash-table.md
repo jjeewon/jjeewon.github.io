@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hash Table이란?"
-author: jiwon
+author: ella
 categories: [ Data Structure ]
 image: assets/images/ht_title.png
 ---

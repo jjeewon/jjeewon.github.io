@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "파이프 옮기기 1"
-author: jiwon
+author: ella
 categories: [ Algorithm ]
 image: assets/images/home.jpg
 tags: [featured]

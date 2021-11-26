@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Android Image Upload Logic 구현"
-author: jiwon
+author: ella
 categories: [ Android, Image Upload, ContentResolver, Sellers ]
 image: assets/images/file_upload.jpeg
 ---

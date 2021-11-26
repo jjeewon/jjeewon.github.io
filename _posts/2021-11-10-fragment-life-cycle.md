@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Fragment Lifecycle 이해하기"
-author: jiwon
+author: ella
 categories: [ Android ]
 image: assets/images/fragment_lifecycle.jpg
 ---

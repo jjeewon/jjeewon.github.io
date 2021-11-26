@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Stack과 Queue"
-author: jiwon
+author: ella
 categories: [ Data Structure ]
 image: assets/images/difference_s_q.png
 ---

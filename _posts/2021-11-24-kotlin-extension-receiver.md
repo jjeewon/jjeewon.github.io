@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "확장 함수와 리시버"
-author: jiwon
+author: ella
 categories: [ Kotlin ]
 image: assets/images/extension_title.png
 ---

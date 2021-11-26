@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "ArrayList와 LinkedList"
-author: jiwon
+author: ella
 categories: [ Data Structure ]
 image: assets/images/arrlinked.jpeg
 ---

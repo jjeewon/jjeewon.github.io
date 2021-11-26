@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "ActivityLauncher로 갤러리에서 Image 가져오기"
-author: jiwon
+author: ella
 categories: [ Android, Image Upload, Sellers ]
 image: assets/images/image_upload.png
 ---

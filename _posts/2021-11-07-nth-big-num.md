@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "n번째 큰 수"
-author: jiwon
+author: ella
 categories: [ Algorithm ]
 image: assets/images/nth_big_num.jpg
 tags: [featured]
