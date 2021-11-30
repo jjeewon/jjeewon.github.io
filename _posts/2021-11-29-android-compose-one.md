@@ -213,5 +213,5 @@ fun MessageList(messages: List<String>) {
 
     
 
-[참고 서적]  
+[참고 사이트]  
 <a name="footnote_1">1</a>: [Jetpack Compose Tutorial](https://developer.android.com/courses/pathways/compose)  
