@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Jetpack Compose 이해하기"
+title:  "Jetpack Compose 이해하기(1)"
 author: ella
 categories: [ Android, Compose ]
 image: assets/images/compose_title.png
