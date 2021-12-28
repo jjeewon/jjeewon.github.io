@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Activity Lifecycle 이해하기"
-author: ella
+author: joey
 categories: [ Android ]
 image: assets/images/activity_lifecycle.jpg
 ---
