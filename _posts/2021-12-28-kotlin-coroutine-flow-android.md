@@ -14,7 +14,7 @@ flow는 코루틴을 기반으로 빌드되며, 비동기식으로 계산할 수
 
 ## Data Stream의 세 가지 요소 : 생산자 + 중개자(option) + 소비자
 <p align="center"><img src="/assets/images/flow_1.png"></p>
-* 생산자(Producer) : 스트림에 추가되는 데이터를 생산함. flow에서 비동기적으로 데이터가 생산함
+* 생산자(Producer) : 스트림에 추가되는 데이터를 생산함. flow에서 비동기적으로 데이터를 생산함
 * 중개자(Intermediaries, option) : 스트림에 내보내는 각각의 값을 수정하거나, 스트림 자체를 수정함
 * 소비자(Consumer) : 스트림의 값을 사용함
 
