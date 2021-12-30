@@ -9,7 +9,7 @@ image: assets/images/flow_in_android_title.png
 # 개념 🔟 Flow in Android  
 
 Flow는 순차적으로 여러 값을 emit하는 데이터스트림이며, 단 하나의 값만 반환하는 suspending 함수와는 다르다. flow를 쓰면 DB에서 실시간 없데이트하는 값들을 수신할 수 있다.  
-flow는 코루틴을 기반으로 빌드되며, 비동기식으로 계산할 수 있는 데이터 스트림이다. flow에서 emit하는 값들은 동일한 타입이여야 한다. 예를 들어서 Flow<Int>는 Int 값만을 내보내는 flow가 된다.  
+flow는 코루틴을 기반으로 빌드되며, 비동기식으로 계산할 수 있는 데이터 스트림이다. flow에서 emit하는 값들은 동일한 타입이여야 한다. 예를 들어서 ```Flow<Int>```는 Int 값만을 내보내는 flow가 된다.  
 값 시퀀스를 생성하는 ```Iterator```와 유사하지만, flow는 suspending 함수를 이용하여 값을 비동기로 만들어서 쓴다. flow를 쓰면 기본 스레드를 block하지 않고도 네트워크 요청을 해서 다음 값을 만들어낼 수 있다.  
 
 ## Data Stream의 세 가지 요소 : 생산자 + 중개자(option) + 소비자
