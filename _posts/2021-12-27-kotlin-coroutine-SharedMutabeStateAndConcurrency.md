@@ -139,7 +139,7 @@ fun main() = runBlocking {
 
 ## 4️⃣ Mutual exclusion
 상호 배제는 동시에 접근해서는 절대로 안되는 임계영역에서 shared state를 수정할 때 쓸 수 있는 방법이다. blocking을 할 때 개발자들은 보통 ```synchronized```나  ```ReentrantLock```를 이용한다. 코루틴의 다른 해결책으로는 **Mutex**가 있다. **Mutex**는 임계영역의 상태를 구분하기 위해서 lock 메소드와 unlock 메소드를 가지고 있다. Mutex.lock()메소드는 suspending 함수이며 thread를 block하지 않는다는 특징이 있다.  
-wickLock이라는 확장함수를 사용하면 ```mutex.lock(); try { ... } finally { mutex.unlock() }``` 패턴을 간단히 적용할 수 있다. 
+withLock이라는 확장함수를 사용하면 ```mutex.lock(); try { ... } finally { mutex.unlock() }``` 패턴을 간단히 적용할 수 있다. 
 ``` 
 val mutex = Mutex()
 var counter = 0
