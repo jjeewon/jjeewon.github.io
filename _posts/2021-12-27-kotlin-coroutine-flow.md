@@ -42,7 +42,7 @@ flow를 만드려면 다음과 같은 방식들을 이용할 수 있다.
 Flow 인터페이스를 implement할 때는 아래에 명시된 두 가지의 중요한 특성들을 고려해야 한다.
 * Context preservation
 * Exception transparency  
-위의 두 특성들은 flow와 관련된 코드에 대한 local reasoning을 수행하는 기능과, downstream flow collector들로부터 분리되어 upstream flow emitter가 develop되는 방식으로 코드를 모듈화하는 특성을 보장해준다. flow를 쓰는 개발자는 flow가 사용하는 upstream flow들의 디테일한 implementation 내용을 알고 있을 필요가 없다. 
+위의 두 특성들은 flow와 관련된 코드에 대한 local reasoning을 할 수 있게해주고, downstream flow collector들로부터 분리되어 upstream flow emitter가 develop되는 방식으로 코드가 모듈화되도록 해준다.
 
 ## (1) Context preservation
 flow는 **context preservation**한 특성을 가진다. flow는 flow 고유의 execution 컨텍스트를 캡슐화하며, downstream으로 전파시키거나 누출시키지 않으므로 (특정 transformation이나 terminal operation)의 execution 컨텍스트에 대해 추론하기가 더 간단하다.  
