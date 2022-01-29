@@ -92,7 +92,7 @@ flow { emitData() }
     .map { computeTwo(it) }
     .collect { process(it) } // throws exceptions from process and computeTwo
 ```
-같은 추론이 ```finally``` 블록을 대체해주는 onCompletion 연산자에도 적용될 수 있다. 모든 exception을 처리하는 Flow의 연산자들은 **exception suppression** 원칙을 따른다. 만약에 downstream exception이 throw되었을 때 upstream flow가 completion 중에 exception을 throw한다면, downstream exception은 upstream exception에 의해 대체되고 suppress되며 finally 블록에서 throw하는 것과 의미상 동일하게 된다. 그러나 downstream exception을 root cause로 여기고 uptream은 아무것도 throw 안한 것처럼 작동하기 때문에, exception을 핸들링하는 연산자들의 operation에 영향을 끼치지는 않는다.  
+같은 추론이 ```finally``` 블록을 대체해주는 onCompletion 연산자에도 적용될 수 있다. 모든 exception을 처리하는 Flow의 연산자들은 **exception suppression** 원칙을 따른다. 만약에 downstream exception이 throw되었을 때 upstream flow가 completion 중에 exception을 throw한다면, downstream exception은 upstream exception에 의해 대체되고 suppress되며 finally 블록에서 throw하는 것과 의미상 동일하게 된다. 그러나 downstream exception을 root cause로 여기고 uptream은 아무것도 throw하지 않은 것처럼 작동하기 때문에, exception을 핸들링하는 연산자들의 operation에 영향을 끼치지는 않는다.  
 제대로 exception transparency를 지키지 않으면, 코드에 대한 local reasoning을 제대로 하지 못하고 collect {...} 에서의 exception이 upstream flow에 의해 "caught"될 수 있기 때문에 코드를 추론하기 어려워져서 이상하게 작동하게 될 것이다.  
 Flow는 런타임에 exception transparency를 검사해서 만약에 exception이 이전 시도에서 throw되었다면, 값을 emit하려고 시도할 때마다 IllegalStateException을 throw한다. 
 
