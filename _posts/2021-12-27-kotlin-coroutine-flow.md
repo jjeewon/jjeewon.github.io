@@ -81,7 +81,7 @@ val myFlow = flow {
 flow 빌더 대신에 **coroutineScope** 또는 **supervisorScope**를 쓸 수 있다. 
 * 범위가 지정된 primitive는 CoroutineScope를 제공하기 위해 사용되어야 함
 * withContext(ctx)이든, launch(ctx)와 같이 빌더의 인자든 간에 emission의 컨텍스트를 바꾸는건 안됨
-* 별개의 컨텍스트에서 다른 flow를 collect할 수는 있지만, flowOn 연산자를 적용하는 것과 똑같은 결과를 내지만, flowOn이 더 효율적임   
+* 별개의 컨텍스트에서 다른 flow를 collect할 수는 있음. 근데 이렇게 하면 flowOn 연산자를 적용하는 것과 똑같은 결과가 나오기는 하나, flowOn이 더 효율적임   
 
 ## (2) Exception transparency
 ```emit```이나 ```emitAll```이 예외를 던질 때, Flow implementation에서는 새로운 값을 emit하는 것을 멈추고 exception으로 finish해줘야 한다. downstream이 실패한 후에 값들을 emit해야 한다면, ```catch``` 연산자를 쓰면 된다. ```catch``` 연산자는 upstream exception만 잡아주고, 모든 downstream exception을 그냥 통과시켜버린다. 이와 유사하게 collect 같은 terminal 연산자들은 코드나 upstream flow에서 나타난 **unhandled exception**을 throw한다. 
