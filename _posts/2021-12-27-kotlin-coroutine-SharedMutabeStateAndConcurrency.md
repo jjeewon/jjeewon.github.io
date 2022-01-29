@@ -117,7 +117,7 @@ fun main() = runBlocking {
 Completed 100000 actions in 2190 ms
 Counter = 100000
 ```  
-위의 코드는 각각의 increment를 single-thread로 제한하는 **fine**-grained thread-confinement를 수행하기 때문에 매우 느리게 동작한다. 각각의 ++은 withContext 블록을 이용하여 multi-threaded **Dispatchers.Default** 컨텍스트에서 ** single-threaded** 컨텍스트로 전환시킨다.
+위의 코드는 각각의 increment를 single-thread로 제한하는 **fine**-grained thread-confinement를 수행하기 때문에 매우 느리게 동작한다. 각각의 ++은 withContext 블록을 이용하여 multi-threaded **Dispatchers.Default** 컨텍스트에서 **single-threaded** 컨텍스트로 전환시킨다.
 
 ## 3️⃣ Thread confinement coarse-grained
 thread-confinement는 예를 들어서, state를 업데이트 시키는 비즈니스 로직을 싱글 스레드로 제한시키는 경우와 같이 큰 덩어리에서 사용된다. 아래의 예제에서는 single thread 컨텍스트에서 각 코루틴을 실행하면서 시작한다. 
