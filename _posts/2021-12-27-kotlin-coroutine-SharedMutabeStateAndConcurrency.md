@@ -161,7 +161,7 @@ fun main() = runBlocking {
 ## 5️⃣ Actors
 actor는 state(코루틴에 confine되고 캡슐화되는)와 channel(다른 코루틴들과 커뮤니케이션하는)로 이루어진 코루틴 entity이다. 간단한 actor는 그냥 함수로 쓸 수 있지만, 복잡한 state를 가진 actor는 클래스로 작성하는 것이 더 적합하다.  
 actor의 코루틴 빌더는 액터에 대한 단일 참조 핸들로 사용할 수 있게 하기 위해서 (1) 메시지를 수신하기 위해서 actor의 mailbox channel을 scope에 결합한다. 그리고 (2) 전송 채널을 결과 job object에 결합한다. 
-actor를 쓰기 위해 첫 번쨰로 할 일은 actor가 처리할 메시지 클래스를 정의하는 것이다. 코틀린의 **sealed class**가 이러한 메시지 클래스를 정의할 때 적합하다. 밑의 예제에서는 CounterMsg sealed class를 이용하여 IncCounter 메시지와 GetCounter 메시지를 정의하였다. IncCountr 메시지는 counter를 증가시킨다. 그리고 GetCounter는 값을 get해준다. GetCounter는 response를 보내야 하므로 파라미터로 달려있다. ```CompletedDeffered```(single value를 나타냄)가 response로 사용되게 된다. 
+actor를 쓰기 위해 첫 번째로 할 일은 actor가 처리할 메시지 클래스를 정의하는 것이다. 코틀린의 **sealed class**가 이러한 메시지 클래스를 정의할 때 적합하다. 밑의 예제에서는 CounterMsg sealed class를 이용하여 IncCounter 메시지와 GetCounter 메시지를 정의하였다. IncCountr 메시지는 counter를 증가시킨다. 그리고 GetCounter는 값을 get해준다. GetCounter는 response를 보내야 하므로 파라미터로 달려있다. ```CompletedDeffered```(single value를 나타냄)가 response로 사용되게 된다. 
 ``` 
 // Message types for counterActor
 sealed class CounterMsg
