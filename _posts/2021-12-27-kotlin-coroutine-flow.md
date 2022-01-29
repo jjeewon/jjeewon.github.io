@@ -75,7 +75,7 @@ val myFlow = flow {
    }
 }
 ``` 
-만약에 flow의 collection이랑 emission이 여러 코루틴으로 분리되어야 한다면, ```channelFlow```를 쓰면 된다. **channelFlow**는 모든 컨텍스트 보존 작업들을 캡슐화해준다. 그리고 변하지않는 implementaion의 디테일한 부분이 아니라, 도메인에 한정된 문제에 개발자가 집중할 수 있도록 도와준다. channelFlow 안에서는 coroutine builder들을 조합해서 쓸 수 있다.  
+만약에 flow의 collection이랑 emission이 여러 코루틴으로 분리되어야 한다면, ```channelFlow```를 쓰면 된다. **channelFlow**는 모든 컨텍스트 보존 작업들을 캡슐화해준다. 그리고 channelFlow을 구체적으로 어떻게 구현할지에 대해 생각하는게 아니라, 도메인에 한정된 문제에 개발자가 집중할 수 있도록 도와준다. 이러한 channelFlow 안에서는 coroutine builder들을 조합해서 쓸 수 있다.  
 
 ## ⁉️ 성능 중요 + (동시 emit & 컨텍스트 jump)이 없다면?
 flow 빌더 대신에 **coroutineScope** 또는 **supervisorScope**를 쓸 수 있다. 
